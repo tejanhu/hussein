@@ -1,0 +1,310 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #23263A;
+}
+nav{
+    background-color: #212336;
+    height: 190px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+nav > a{
+    margin-top: 0.5em;
+    margin-left:2.4em;
+}
+nav a:first-of-type span span{
+    color: #CF4150;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+#hero-section{
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5em;
+}
+#home-left-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-left: 4em;
+}
+#hero-section h1{
+    font-size: 40px;
+    color: #FFF;
+}
+#hero-section p{
+    color: #3e4151;
+    text-align: left;
+    font-size: 20px;
+}
+#home-right-section #design{
+    margin-top: -10em;
+}
+button{
+    background-color: #CF4150;
+    border: none;
+    font-size: 20px;
+    width: 12em;
+    height: 3em;
+    margin-left: 98px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #FFF;
+}
+.services-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 3em;
+}
+#services-title{
+    color: #FFF;
+}
+#services-right-section{
+    visibility: hidden;
+}
+.skill-container{
+    background-color: #2B2D41;
+    min-width: 30%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    color: #FFF;
+}
+#skill-set-title{
+    font-size: 58px;
+    margin-top: -0.1em;
+}
+.skill-container:hover{
+    background-color: #2b2d413c;
+}
+.services-section.services-left-section p, .services-section.services-left-section h2{
+    text-align: center;
+}
+h2{
+    color: #CF4150;
+    font-size: 35px;
+}
+h2:after {
+    content: '';
+    display: flex;
+    position: relative;
+    width: 2em;
+    border-bottom: 3px solid #CF4150;
+    margin-top: 2%; 
+    margin-left: 30%;
+}
+.skill-container h3{
+    color: white;
+    font-size: 30px;
+}
+.contact-right-section{
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    align-items: flex-start;
+    margin-top: -6em;
+    margin-left: -10.9em;
+}
+.contact-right-section img{
+    margin-top: -18em;
+    margin-left: 6.5em;
+}
+.contact-section{
+    text-align: center;
+    margin-top: -8rem;
+}
+h3{
+    color: #CF4150;
+    font-size: 30px;
+}
+.contact-form{
+    margin-top: 2em;
+    margin-bottom: 15px;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.contact-form button{
+    color: #552639;
+    font-weight: bold;
+    margin-left: -20px;
+}
+.contact-form input{
+    background-color: #282A41;
+    border: none;
+    font-size: 25px;
+    width: 12em;
+}
+.contact-form input::placeholder{
+    color: #1B1D31;
+}
+i{
+    color: #1C1E32;
+    padding-left: 12px;
+}
+.contact-section.design{
+    display: none;
+}
+
+@media(min-width: 700px){
+    .contact-section {
+       margin-left: -5rem;
+    }
+}
+
+@media(min-width: 768px){
+    nav{
+        height: 100px;
+        font-size: 18px;
+    }
+    nav a{
+        font-size: 18px;
+    }
+    nav>a{
+        font-size: 1.5em;
+    }
+    nav, nav ul{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    nav ul{
+        gap: 8em;
+    }
+    #hero-section h1{
+        text-align: left;
+        font-size: 70px;
+    }
+    #home-right-section img{
+        width: 295px;
+        height: 295px;
+    }
+    #services{
+        display: flex;
+        flex-direction: row;
+        margin-left: 5em;
+    }
+    #skill-set-title{
+       display: flex;
+        font-size: 58px;
+    }
+    #services-title{
+        display: flex;
+    }
+    .skill-container{
+       display: inline-flex;
+       flex-direction: column;
+       margin-left: 1em;
+    }
+    .skill-container p{
+        text-align: left;
+        margin-left: 1.1rem;
+        justify-content: flex-start;
+    }
+    #services-right-section img{
+        width:295px;
+        height: 295px;
+        visibility: visible;
+    }
+    h2:after {
+        content: '';
+        display: flex;
+        position: relative;
+        width: 2em;
+        border-bottom: 3px solid #CF4150;
+        margin-top: 1.5em; 
+        margin-left: -3.9em;
+    }
+    .contact-section{
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+    .contact-right-section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position:relative;
+        top: 4em;
+        margin-right: -15%;
+    }
+    .contact-right-section img{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        width: 295px;
+        height: 295px;
+        align-items: flex-end;
+    }
+    .contact-section h3{
+        display: flex;
+        margin-left: 4em;
+    }
+    .contact-form button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15em;
+    }
+    .contact-section input:nth-of-type(2){
+        margin-top: 0.2em;
+    }
+    .contact-section h3{
+       font-size: 48px;
+    }
+    .contact-form input{
+        font-size: 50px;
+        padding-left: 17px;
+        padding-bottom: 1.5%;
+        width: 10.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .contact-form{
+      display: flex;
+      justify-content: left;
+      padding-left: 10.8em;
+    }
+    .contact-form input::placeholder{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
